@@ -5,7 +5,8 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "postinstall": "node node_modules/@nx-plus/vue/patch-nx-dep-graph.js"
   },
   "private": true,
   "dependencies": {
@@ -15,8 +16,12 @@
     "react-particles-webgl": "^1.0.10",
     "react-router-dom": "6.3.0",
     "regenerator-runtime": "0.13.7",
+    "styled-components": "^5.3.5",
+    "styled-normalize": "^8.0.7",
     "three": "^0.142.0",
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0-0"
   },
   "devDependencies": {
     "@nrwl/cli": "14.4.0",
@@ -27,6 +32,7 @@
     "@nrwl/react": "14.4.0",
     "@nrwl/web": "14.4.0",
     "@nrwl/workspace": "14.4.0",
+    "@nx-plus/vue": "^14.1.0",
     "@testing-library/react": "13.3.0",
     "@types/jest": "27.4.1",
     "@types/node": "16.11.7",
@@ -35,6 +41,13 @@
     "@types/react-router-dom": "5.3.3",
     "@typescript-eslint/eslint-plugin": "^5.29.0",
     "@typescript-eslint/parser": "^5.29.0",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-typescript": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-prettier": "6.0.0",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "@vue/test-utils": "^2.0.0-0",
     "babel-jest": "27.5.1",
     "cypress": "^9.1.0",
     "eslint": "~8.15.0",
@@ -42,14 +55,19 @@
     "eslint-plugin-cypress": "^2.10.3",
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-jsx-a11y": "6.6.0",
+    "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-react": "7.30.1",
     "eslint-plugin-react-hooks": "4.6.0",
+    "eslint-plugin-vue": "^7.0.0-0",
     "jest": "27.5.1",
+    "jest-serializer-vue": "^2.0.2",
+    "jest-transform-stub": "^2.0.0",
     "nx": "14.4.0",
     "prettier": "^2.6.2",
     "react-test-renderer": "18.2.0",
     "ts-jest": "27.1.4",
     "ts-node": "~10.8.0",
-    "typescript": "~4.7.2"
+    "typescript": "~4.7.2",
+    "vue3-jest": "^27.0.0-alpha.1"
   }
 }

@@ -3,6 +3,8 @@
   "version": 2,
   "projects": {
     "portfolio-react": "apps/portfolio-react",
-    "portfolio-react-e2e": "apps/portfolio-react-e2e"
+    "portfolio-react-e2e": "apps/portfolio-react-e2e",
+    "ubereats-vue": "apps/ubereats-vue",
+    "ubereats-vue-e2e": "apps/ubereats-vue-e2e"
   }
 }
