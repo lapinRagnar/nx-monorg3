@@ -12,14 +12,14 @@
         "outputPath": "dist/apps/portfolio-react",
         "index": "apps/portfolio-react/src/index.html",
         "baseHref": "/",
-        "main": "apps/portfolio-react/src/main.tsx",
-        "polyfills": "apps/portfolio-react/src/polyfills.ts",
+        "main": "apps/portfolio-react/src/main.js",
+        "polyfills": "apps/portfolio-react/src/polyfills.js",
         "tsConfig": "apps/portfolio-react/tsconfig.app.json",
         "assets": [
           "apps/portfolio-react/src/favicon.ico",
           "apps/portfolio-react/src/assets"
         ],
-        "styles": ["apps/portfolio-react/src/styles.scss"],
+        "styles": ["apps/portfolio-react/src/styles.css"],
         "scripts": [],
         "webpackConfig": "@nrwl/react/plugins/webpack"
       },
@@ -33,8 +33,8 @@
         "production": {
           "fileReplacements": [
             {
-              "replace": "apps/portfolio-react/src/environments/environment.ts",
-              "with": "apps/portfolio-react/src/environments/environment.prod.ts"
+              "replace": "apps/portfolio-react/src/environments/environment.js",
+              "with": "apps/portfolio-react/src/environments/environment.prod.js"
             }
           ],
           "optimization": true,
@@ -74,7 +74,7 @@
       "executor": "@nrwl/jest:jest",
       "outputs": ["coverage/apps/portfolio-react"],
       "options": {
-        "jestConfig": "apps/portfolio-react/jest.config.ts",
+        "jestConfig": "apps/portfolio-react/jest.config.js",
         "passWithNoTests": true
       }
     }

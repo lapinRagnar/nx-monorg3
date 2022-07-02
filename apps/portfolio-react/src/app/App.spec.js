@@ -1,17 +1,21 @@
 import { render } from '@testing-library/react';
-
-import App from './app';
-
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
 describe('App', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<App />);
-
+    const { baseElement } = render(
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    );
     expect(baseElement).toBeTruthy();
   });
-
   it('should have a greeting as the title', () => {
-    const { getByText } = render(<App />);
-
+    const { getByText } = render(
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    );
     expect(getByText(/Welcome portfolio-react/gi)).toBeTruthy();
   });
 });

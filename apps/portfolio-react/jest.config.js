@@ -1,5 +1,5 @@
 /* eslint-disable */
-export default {
+module.exports = {
   displayName: 'portfolio-react',
   preset: '../../jest.preset.js',
   transform: {
