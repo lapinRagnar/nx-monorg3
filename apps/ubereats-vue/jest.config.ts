@@ -13,11 +13,9 @@ module.exports = {
   globals: {
     'ts-jest': {
       tsconfig: 'apps/ubereats-vue/tsconfig.spec.json',
-      babelConfig: 'apps/ubereats-vue/babel.config.js',
     },
     'vue-jest': {
       tsConfig: 'apps/ubereats-vue/tsconfig.spec.json',
-      babelConfig: 'apps/ubereats-vue/babel.config.js',
     },
   },
 };
